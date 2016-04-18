@@ -129,6 +129,7 @@ class CsvExport extends Part
 
     protected function renderCsv()
     {
+        ob_clean();
         $file = fopen('php://output', 'w');
         header('Content-Type: text/csv');
         header('Content-Disposition: attachment; filename="' . $this->getFileName() . '"');
