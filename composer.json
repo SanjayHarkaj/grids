@@ -19,8 +19,8 @@
   ],
   "require": {
     "php": "^5.5||^7",
-    "view-components/view-components": "dev-master",
-    "nayjest/tree": "^3"
+    "view-components/view-components": "dev-master#813b93d96aab63a684835c3c4e7c82e756aa7409",
+~0.24    "nayjest/tree": "^3"
   },
   "require-dev": {
     "view-components/testing-helpers": "^2.0.1"
