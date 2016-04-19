@@ -19,7 +19,7 @@
   ],
   "require": {
     "php": "^5.5||^7",
-    "view-components/view-components": "dev-master#813b93d96aab63a684835c3c4e7c82e756aa7409",
+    "view-components/view-components": "dev-master",
     "nayjest/tree": "^3"
   },
   "require-dev": {
@@ -56,5 +56,5 @@
   "support": {
     "email": "mail@vitaliy.in"
   },
-  "minimum-stability": "stable"
+  "minimum-stability": "dev"
 }
