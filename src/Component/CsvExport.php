@@ -144,7 +144,8 @@ class CsvExport extends Part
             $output = [];
             $grid->setCurrentRow($row);
             foreach ($grid->getColumns() as $column) {
-                $output[] = $this->escapeString($column->getCurrentValueFormatted());
+                if($column->getId() !="Actions")
+                    $output[] = $this->escapeString($column->getCurrentValueFormatted());
             }
             fputcsv($file, $output, $this->getCsvDelimiter());
         }
@@ -166,7 +167,8 @@ class CsvExport extends Part
         /** @var Grid $grid */
         $grid = $this->root;
         foreach ($grid->getColumns() as $column) {
-            $output[] = $this->escapeString($column->getLabel());
+            if($column->getId() !="Actions")
+                $output[] = $this->escapeString($column->getLabel());
         }
         fputcsv($file, $output, $this->getCsvDelimiter());
     }
