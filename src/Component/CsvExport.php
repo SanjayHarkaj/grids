@@ -17,7 +17,7 @@ class CsvExport extends Part
 {
 
     private $fileName = 'data.csv';
-    private $csvDelimiter = ';';
+    private $csvDelimiter = ',';
     private $exitFunction;
 
     /**
