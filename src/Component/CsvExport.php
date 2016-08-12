@@ -197,7 +197,7 @@ class CsvExport extends Part
                 'onclick' => "window.location='$href'; return false;",
                 'style' => 'margin:2px;'
             ],
-            [new DataView('CSV Export')]
+            [new DataView('<i class="fa fa-download"></i> CSV Export')]
         );
     }
 }
